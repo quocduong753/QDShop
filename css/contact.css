@@ -1,0 +1,145 @@
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details-content {
+    width: 40%;
+}
+
+#contact-form form span,
+#contact-details .details-content span {
+    font-size: 12px;
+}
+
+#contact-form form h2,
+#contact-details .details-content h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details-content h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details-content li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details-content i {
+    font-size: 16px;
+    padding-right: 22px;
+}
+
+#contact-details .details-content p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#contact-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 80px;
+    padding: 40px;
+    border: 1px solid #e1e1e1;
+}
+
+#contact-form form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact-form form input,
+#contact-form form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+}
+
+#contact-form form button {
+    background-color: #088178;
+    color: #fff;
+}
+
+.peoble div {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#contact-form .people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#contact-form .peoble-info p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#contact-form .peoble-info span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+@media (max-width: 1023px) {
+    #contact-form {
+        margin: 30px 40px;
+        padding: 20px;
+    }
+
+    #contact-form form {
+        width: 53%;
+    }
+}
+
+@media (max-width: 739px) {
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .details-content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map {
+        width: 100%;
+    }
+
+    #contact-form {
+        margin: 20px;
+        padding: 20px 10px;
+        flex-wrap: wrap;
+    }
+
+    #contact-form form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

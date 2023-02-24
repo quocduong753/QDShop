@@ -1,0 +1,60 @@
+#header-page.header-about {
+    background-image: url("/img/about/banner.png");
+}
+
+#about-introduce {
+    display: flex;
+    align-items: center;
+}
+
+#about-introduce img {
+    width: 50%;
+    height: auto;
+}
+
+#about-introduce div {
+    padding-left: 40px;
+}
+
+#about-introduce marquee {
+    margin-top: 10px;
+    background-color: #ccc;
+}
+
+#about-app {
+    text-align: center;
+}
+
+#about-app h1 a {
+    color: #0aa1f8;
+}
+
+#about-app .video {
+    width: 80%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width: 739px) {
+    #about-introduce div {
+        padding: 0;
+    }
+
+    #about-introduce {
+        flex-direction: column;
+    }
+
+    #about-introduce img {
+        width: 100%;
+    }
+
+    #about-app .video {
+        width: 90%;
+    }
+}
