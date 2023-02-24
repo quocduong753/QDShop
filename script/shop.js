@@ -8,7 +8,7 @@ const renderProduct = () => {
                 htmls = products.map((product) => {
                     return `
                         <div class="pro">
-                            <a href="/pages/product.html">
+                            <a href="../pages/product.html">
                                 <img src="${product.image}" alt="" />
                                 <div class="des">
                                     <span>${product.category}</span>
