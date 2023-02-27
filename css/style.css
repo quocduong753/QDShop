@@ -145,7 +145,7 @@ button.white {
     padding: 14px 80px;
     background: #e3e6f3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    z-index: 999;
+    z-index: 5;
     position: sticky;
     top: 0;
     left: 0;
@@ -184,6 +184,43 @@ button.white {
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+#header-action {
+    display: flex;
+    align-items: center;
+}
+
+#header-action .lg-bag {
+    display: flex;
+    font-size: 29px;
+    margin-right: 30px;
+    color: #088178;
+    padding: 8px 4px 2px 4px;
+}
+
+#header-action .lg-bag:hover {
+    color: #088178;
+}
+
+.btn-login {
+    height: 35px;
+    width: 70px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #088178;
+    cursor: pointer;
+}
+
+.btn-login a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-login:hover {
+    background-color: rgba(8, 129, 120, 0.9);
 }
 
 /* CSS home page */
@@ -669,6 +706,23 @@ button.white {
 
     #navbar li {
         margin-bottom: 25px;
+    }
+
+    #header-action {
+        display: none;
+    }
+
+    #navbar .login-mobile {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #088178;
+        border-radius: 4px;
+        padding: 8px 50px;
+    }
+
+    #navbar .login-mobile a {
+        color: #088178;
+        font-size: 20px;
     }
 
     #mobile {

@@ -70,7 +70,7 @@ const renderProduct1 = () => {
                 htmls = products.map((product) => {
                     return `
                         <div class="pro">
-                            <a href="/pages/product.html">
+                            <a href="../pages/product.html">
                                 <img src="${product.image}" alt="" />
                                 <div class="des">
                                     <span>${product.category}</span>
@@ -106,7 +106,7 @@ const renderProduct2 = () => {
                 htmls = products.map((product) => {
                     return `
                         <div class="pro">
-                            <a href="/pages/product.html">
+                            <a href="../pages/product.html">
                                 <img src="${product.image}" alt="" />
                                 <div class="des">
                                     <span>${product.category}</span>

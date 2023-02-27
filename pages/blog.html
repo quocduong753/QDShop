@@ -5,12 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
+            rel="shortcut icon"
+            href="https://static.vecteezy.com/system/resources/previews/002/378/040/non_2x/woman-face-logo-free-vector.jpg"
+            type="image/x-icon"
+        />
+        <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+        />
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/blog.css" />
-        <title>Document</title>
+        <title>Cara Shop</title>
     </head>
     <body>
         <section id="header">
@@ -19,25 +28,33 @@
             /></a>
             <div>
                 <ul id="navbar">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/shop.html">Shop</a></li>
                     <li>
                         <a class="active" href="../pages/blog.html">Blog</a>
                     </li>
                     <li><a href="../pages/about.html">About</a></li>
                     <li><a href="../pages/contact.html">Contact</a></li>
-                    <li>
-                        <a class="lg-bag" href="#"
-                            ><i class="fa-solid fa-bag-shopping"></i
-                        ></a>
+                    <li hidden class="login-mobile">
+                        <a href="../pages/login.html">Log in</a>
                     </li>
                     <div id="close-nav">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                 </ul>
             </div>
+            <div id="header-action">
+                <div>
+                    <a class="lg-bag" href="#">
+                        <i class="bx bx-cart-alt"></i>
+                    </a>
+                </div>
+                <button class="btn-login">
+                    <a href="../pages/login.html">Log in</a>
+                </button>
+            </div>
             <div id="mobile" hidden>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="#"><i class="bx bx-cart-alt"></i></a>
                 <i id="bar" class="fa-solid fa-bars"></i>
             </div>
         </section>

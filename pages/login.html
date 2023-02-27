@@ -18,7 +18,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
         />
         <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/about.css" />
+        <link rel="stylesheet" href="../css/login.css" />
         <title>Cara Shop</title>
     </head>
     <body>
@@ -31,9 +31,7 @@
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/shop.html">Shop</a></li>
                     <li><a href="../pages/blog.html">Blog</a></li>
-                    <li>
-                        <a class="active" href="../pages/about.html">About</a>
-                    </li>
+                    <li><a href="../pages/about.html">About</a></li>
                     <li><a href="../pages/contact.html">Contact</a></li>
                     <li hidden class="login-mobile">
                         <a href="../pages/login.html">Log in</a>
@@ -50,7 +48,7 @@
                     </a>
                 </div>
                 <button class="btn-login">
-                    <a href="../pages/login.html">Log in</a>
+                    <a href="../pages/login.html">Login</a>
                 </button>
             </div>
             <div id="mobile" hidden>
@@ -58,74 +56,108 @@
                 <i id="bar" class="fa-solid fa-bars"></i>
             </div>
         </section>
-        <section id="header-page" class="header-about">
-            <h2>#KnowUs</h2>
-            <p>Lorem ipsum color sit amet, consectetur</p>
+        <section id="signUp-container">
+            <form method="POST" action="" class="form" id="register-form">
+                <h3 class="form-heading">sign up</h3>
+                <div class="spacer"></div>
+                <div class="form-group">
+                    <label for="user-name" class="form-lable">User name</label>
+                    <input
+                        class="form-control user-name"
+                        rules="required"
+                        name="user-name"
+                        placeholder="Enter username"
+                        type="text"
+                    />
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-lable">Email</label>
+                    <input
+                        class="form-control email"
+                        rules="required|email"
+                        name="email"
+                        placeholder="Ex: email@gmail.com"
+                        type="text"
+                    />
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-lable">password</label>
+                    <input
+                        class="form-control password"
+                        rules="required|min:6"
+                        name="password"
+                        placeholder="Enter password"
+                        type="password"
+                    />
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password_confirmation" class="form-lable"
+                        >Confirm</label
+                    >
+                    <input
+                        class="form-control password_confirmation"
+                        rules="required|isConfirmed"
+                        name="password_confirmation"
+                        placeholder="confirm"
+                        type="password"
+                    />
+                    <span class="form-message"></span>
+                </div>
+                <p class="switch-login-form">
+                    Already have an account <a href="#">Login</a>
+                </p>
+                <button class="form-submit">Sign up</button>
+                <div class="form-close"><i class="bx bx-x"></i></div>
+            </form>
         </section>
-        <section id="about-introduce" class="section-p1">
-            <img src="../img/about/a6.jpg" alt="" />
+        <section id="login-container">
+            <div class="login-logo">
+                <img src="../img/logoLogin.jpg" alt="" />
+                <h4>Never Goes Out Of Style</h4>
+            </div>
             <div>
-                <h2>Who we are?</h2>
-                <p>
-                    As soon as a visitor lands on this page, they’re instructed
-                    to book a flight — and to do so within the timeframe of
-                    their current sale; in this case, by Monday. The entire page
-                    is designed around this action, and the clear directive
-                    leaves no room for confusion.Of course, these are very
-                    simplistic ways of explaining the benefits of each. But each
-                    conveys a specific type of value, letting visitors decide
-                    for themselves which is most important.
-                </p>
-                <abbr title=""
-                    >A clear, direct call to action is the best way to encourage
-                    visitors to convert and generate the results that matter
-                    most for your business.</abbr
-                >
-                <marquee loop="-1" scrollamount="5" width="100%"
-                    >In fact, as you design your page, your call to action
-                    should be one of the only elements that visitors can engage
-                    with</marquee
-                >
-            </div>
-        </section>
-        <section id="about-app" class="section-p1">
-            <h1>Download Our <a href="#">App</a></h1>
-            <div class="video">
-                <video autoplay muted loop src="../img/about/1.mp4"></video>
-            </div>
-        </section>
-        <section id="newletter" class="section-p1 section-m1">
-            <div class="newtext">
-                <h4>Sign Up For Newletters</h4>
-                <p>
-                    Get E-mail updates about our latest shop and
-                    <span>special offers</span>
-                </p>
-            </div>
-            <div class="form">
-                <input type="text" placeholder="You email address" />
-                <button class="normal">Sign Up</button>
+                <form method="POST" action="" class="form" id="login-form">
+                    <h3 class="form-heading">Login</h3>
+                    <div class="spacer"></div>
+                    <div class="form-group">
+                        <label for="user-name" class="form-lable"
+                            >User name</label
+                        >
+                        <input
+                            class="form-control user-name"
+                            rules="required"
+                            name="user-name"
+                            placeholder="Enter username"
+                            type="text"
+                        />
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-lable"
+                            >Password</label
+                        >
+                        <input
+                            class="form-control password"
+                            rules="required"
+                            name="password"
+                            placeholder="Enter password"
+                            type="password"
+                        />
+                        <span class="form-message"></span>
+                    </div>
+                    <p class="switch-register-form">
+                        Don’t have an account? <a href="#">Sign up</a>
+                    </p>
+                    <button class="form-submit">Login</button>
+                </form>
             </div>
         </section>
         <div id="backTop">
             <i class="fa-solid fa-angles-up"></i>
         </div>
-        <section id="wifi-conect">
-            <div class="alert" id="error">
-                <i class="bx bx-wifi-off wifi-icon"></i>
-                <div class="content">
-                    <div class="title">Wifi disconnect!</div>
-                </div>
-                <i class="fa-solid fa-xmark close"></i>
-            </div>
-            <div class="alert" id="success">
-                <i class="bx bx-wifi wifi-icon"></i>
-                <div class="content">
-                    <div class="title">Wifi connect!</div>
-                </div>
-                <i class="fa-solid fa-xmark close"></i>
-            </div>
-        </section>
         <footer id="footer" class="section-p1">
             <div class="col contact">
                 <img src="../img/logo.png" alt="" />
@@ -178,5 +210,6 @@
             </div>
         </footer>
         <script src="../script/script.js"></script>
+        <script src="../script/form.js"></script>
     </body>
 </html>
