@@ -181,3 +181,27 @@
         transform: scale(1);
     }
 }
+
+@media (max-width: 1023px) {
+    #login-container {
+        justify-content: center;
+        padding: 80px 40px;
+    }
+    #login-container .login-logo {
+        display: none;
+    }
+
+    #login-container > div {
+        width: 60%;
+    }
+}
+
+@media (max-width: 739px) {
+    #login-container {
+        padding: 80px 30px;
+    }
+
+    #login-container > div {
+        width: 100%;
+    }
+}
